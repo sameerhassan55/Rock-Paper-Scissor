@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    /* overflow: hidden; */
+    background-color:  black;
+ }
+
+nav {
+    height: 80px;
+    background-color: black;
+    color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 80px;
+    filter: invert();
+
+}
+img:nth-child(1){
+    margin-right: 50px;
+}
+
+#img2{
+    margin-left: 50px;
+    transform: rotate(180deg);
+    
+}
+header {
+    background-color: aqua;
+    color: brown;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 5px;
+
+}
+
+
+#hola {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+
+#holabox {
+    height: 20px;
+}
+
+#but {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(196, 248, 196);
+    color: rgb(214, 67, 13);
+    padding: 10px;
+    margin: auto;
+
+
+}
+
+#but:hover {
+    background-color: rgb(107, 62, 97);
+    color: rgb(8, 204, 218);
+}
+
+.mybuttons {
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.mybuttons button{
+    margin: 5px 10px;
+
+}
+
+#again {
+    /* margin-left: 45%;
+    margin-top: 50px; */
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+#box {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(172, 137, 204);
+    color: rgb(3, 3, 156);
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    /* display: none; */
+    /* transition: display 2s ease-in; */
+}
+
+.show {
+    margin: 20px auto;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+
+.hide {
+    margin: 20px auto;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+
+
+.disp {
+    display: none;
+}
+
+.rule {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+/* .rule ul li:nth-child(1){ */
+/* list-style: none; */
+
+/* } */
+
+.rule i {
+    border-bottom: 2px double black;
+}
+
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 20px;
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    font-family: 'Courgette', cursive;
+}
+
+.streak {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 20px;
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    font-family: 'Courgette', cursive;
+
+}
+
+.final{
+    color: red;
+    /* position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto; */
+/* display: block; */
+
+}
+.aaa{
+     /* position: absolute;
+    margin: auto;
+    color: maroon;
+    background-color: rgb(223, 241, 110); */ 
+    display: block;
+}
+
+.hold{
+     position: absolute;
+     bottom: 10px;
+    margin: auto;
+    color: maroon;
+    background-color: rgb(223, 241, 110); 
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+
+}
+
+@media (max-width: 768px){
+    body{
+        overflow: visible;
+    }
+    nav{
+        height: 60px;
+
+    }
+    header{
+        padding: 0;
+    }
+    img{
+        height: 60px;
+
+    }
+    #img1, #img2{
+margin: 0;
+    }
+    .rule{
+        width: 40%;
+        margin: 10px auto;
+    }
+    #box{
+        width: 70%;
+    }
+    .cont , .streak{
+        width: 15%;
+        
+
+    }
+   
+}
+
+
+@media (max-width: 388px) and (min-width: 370px){
+    body{
+        overflow: visible;
+    }
+
+    .rule{
+    position: relative;
+    top: 610px;
+     width: 90%;
+    }
+
+    .hold{
+        bottom:0;
+    }
+    .cont , .streak{
+        width: 40%;
+        
+
+    }
+    .mybuttons{
+        position: relative;
+        bottom: 100px;
+    }
+    #box{
+        margin: -90px auto 5px auto;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 401px) {
+    body{
+        overflow: visible;
+    }
+
+    .rule{
+    position: relative;
+    top: 610px;
+     width: 90%;
+    }
+
+    .hold{
+        bottom: 230px;
+    }
+    .cont , .streak{
+        width: 40%;
+        
+
+    }
+    .mybuttons{
+        position: relative;
+        bottom: 100px;
+    }
+    #box{
+        margin: -90px auto 5px auto;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 389px) {
+    body{
+        overflow: visible;
+    }
+
+    .rule{
+    position: relative;
+    top: 610px;
+     width: 90%;
+    }
+
+    .hold{
+        bottom: 170px;
+    }
+    .cont , .streak{
+        width: 40%;
+        
+
+    }
+    .mybuttons{
+        position: relative;
+        bottom: 100px;
+    }
+    #box{
+        margin: -90px auto 5px auto;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 368px) and (min-width: 230px) {
+    body{
+        overflow: visible;
+    }
+
+    .rule{
+    position: relative;
+    top: 610px;
+     width: 90%;
+    }
+
+    .hold{
+        bottom: 65px;
+    }
+    .cont , .streak{
+        width: 40%;
+        
+
+    }
+    .mybuttons{
+        position: relative;
+        bottom: 100px;
+    }
+    #box{
+        margin: -90px auto 5px auto;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
